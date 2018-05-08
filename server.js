@@ -63,18 +63,4 @@ con.connect(function(err) {
 });
 
 
-app.get('/getSJSUclassNames', function(req, res) {
-
-});
-
-app.get('/getOtherCollegeNames', function(req, res) {
-    con.connect(function(err) {
-        if (err) throw err;
-
-    });
-});
-
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Our app is running on port ${ PORT }`);
-});
+app.listen(process.env.PORT || 5000);
